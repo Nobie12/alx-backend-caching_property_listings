@@ -21,8 +21,8 @@ services:
     ports:
       - "6379:6379"
     volumes:
-      - redis_data:/data # ✅ Add this line so Redis persists data
+      - redis_data:/data
 
 volumes:
   postgres_data:
-  redis_data: # ✅ Define redis_data volume here
+  redis_data:
